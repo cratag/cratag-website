@@ -2,13 +2,16 @@ import './App.css';
 
 function App() {
   return (
-<div className="App">
+<div className="Container">
+  
   <div className="Header"> 
-<p>Cratag</p>
-</div>
-<div className="Body">
-<p>Asi que chuchuchuchupelo</p>
-</div>
+  <p className="Title">cratλg</p>
+  </div>
+
+  <div className="CenterBody">
+  <text> Hello world</text>
+  </div>
+
 </div>
   );
 }
