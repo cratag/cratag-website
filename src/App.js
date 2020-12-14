@@ -2,16 +2,19 @@ import './App.css';
 
 function App() {
   return (
-<div className="Container">
-  
-  <div className="Header"> 
+<div>
+<div className="Header"> 
   <p className="Title">cratλg</p>
   </div>
+<div className="Container">
+  
+
 
   <div className="CenterBody">
-  <text> Hello world</text>
+  <text> Hello w2orld</text>
   </div>
 
+</div>
 </div>
   );
 }

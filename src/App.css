@@ -8,7 +8,7 @@ color: white;
 .CenterBody{
 background-color: #ea9b51;
 color: white;
-padding: 5%;
+padding: 10%;
 margin: 5%;
 margin-bottom: 10%;
 padding-bottom: 10%;
@@ -29,10 +29,12 @@ padding-bottom: 10%;
     background-image: url(./assets/background.png);
 
     /* Full height */
-    height: 100%; 
 
     /* Center and scale the image nicely */
     background-repeat: round;
     background-position: initial;
     background-size: auto;
+
+    padding: 5%;
+    padding-bottom: 10%;
 }
