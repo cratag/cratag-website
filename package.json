@@ -1,5 +1,6 @@
 {
   "name": "cratag",
+  "homepage": "http://www.cratag.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

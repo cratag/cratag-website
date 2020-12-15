@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: local('Louis George Cafe'), url("./fonts/Louis George Cafe.ttf") format('truetype');}
+@font-face {
+  font-family: 'Louis George Cafe Light';
+  src: local('Louis George Cafe Light'), url("./fonts/Louis George Cafe Light.ttf") format('truetype');}
+@font-face {
+  font-family: 'Louis George Cafe Bold';
+  src: local('Louis George Cafe Bold'), url("./fonts/Louis George Cafe Bold.ttf") format('truetype');}

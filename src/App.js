@@ -4,14 +4,14 @@ function App() {
   return (
 <div>
 <div className="Header"> 
-  <p className="Title">cratλg</p>
+  <p className="Title">crat<p>λ</p>g</p>
   </div>
 <div className="Container">
   
 
 
   <div className="CenterBody">
-  <text> Hello w2orld</text>
+  <text className="test"> Hello w2orld</text>
   </div>
 
 </div>
