@@ -1,11 +1,21 @@
+import React, {useState} from 'react';
 import './App.css';
+import mail from "./assets/mail.png"
+import git from "./assets/git2.png"
 
-function App() {
-  return (
+
+
+export default class App extends React.Component{
+  render(){
+    
+return (
 <div>
-<div className="Header"> 
-  <p className="Title">crat<p>λ</p>g</p>
-  </div>
+
+<div className="Header">
+  <div><p className="HeaderTitle">crat<p style={{display: 'inline', fontFamily: 'Calibri'}}>λ</p>g</p><img className="HeaderButton" src={mail} alt="Mail" /><img className="HeaderButton" src={git} alt="git" /></div> 
+  
+</div>
+
 <div className="Container">
   
 
@@ -18,5 +28,4 @@ function App() {
 </div>
   );
 }
-
-export default App;
+}

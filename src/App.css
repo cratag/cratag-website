@@ -1,9 +1,9 @@
 
 .Header{
 width: 100%;
-padding-top: 0.7%;
 background-color: black;
 color: white;
+display: inline-block;
 }
 .CenterBody{
 background-color: #ea9b51;
@@ -12,35 +12,29 @@ padding: 10%;
 margin: 5%;
 margin-bottom: 10%;
 padding-bottom: 10%;
-
 }
 
-.Title{
+.HeaderTitle{
     font-family: 'Louis George Cafe Bold';
     font-size: 30px;
     text-shadow: 0px 1px #ea9b51;
     font-weight: 600;
-    margin: auto; 
-    margin-left: 0.7%;
-    padding-bottom: 0.7%;
+    display: inline;
+    margin: 1%;
 }
 
-.Title2{
-    font-size: 30px;
-    text-shadow: 0px 1px #ea9b51;
-    font-weight: 600;
-    margin: auto; 
-    margin-left: 0.7%;
-    padding-bottom: 0.7%;
+.HeaderButton{
+    height: 20px;
+    display: inline;
+    float: right;
+    margin: 0.3%;
+    margin-top: 0.7%;
 }
 
 .Container {
-    /* The image used */
+
     background-image: url(./assets/background.png);
 
-    /* Full height */
-
-    /* Center and scale the image nicely */
     background-repeat: round;
     background-position: initial;
     background-size: auto;
