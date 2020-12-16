@@ -5,18 +5,29 @@ color: white;
 }
 
 .CenterBody{
-/* align-self: center;
-background-color: #ea9b51;
-color: white;
- */
-margin: 15%;
-background-color: firebrick;
-max-width: 1200px;
-padding: 1%;
+background-color:  rgba(0,0,0,0.4);
+margin: auto;
+border-radius: 10px;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+
+.CenterBodyOuter{
+    margin: auto;
+    margin-top: 3%;
+    max-width: 1250px;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+
 }
 
 .CenterBodyImage{
-    padding: 2%;
+    margin: 1%;
+    margin-right:2.5%;
+    margin-left:2.5%;
 }
 
 .HeaderTitle{
@@ -36,10 +47,10 @@ padding: 1%;
     padding: 3px;
 }
 
-.test{
-    font-family: 'Louis George Cafe Bold';
-    color: white;
-    font-size: 40px;
+
+.Test2{
+    margin: auto;
+
 }
 
 button {

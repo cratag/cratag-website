@@ -17,9 +17,6 @@ return (
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
           <Route path="/">
             <Home />
           </Route>
@@ -37,7 +34,7 @@ function Header(){
 <div className="Header">
   <div style={{padding: "0.5%"}}>
   <Link to="/" style={{ color: '#FFF', textDecoration: "none" }}><p className="HeaderTitle">crat<p style={{display: 'inline', fontFamily: 'Calibri'}}>λ</p>g</p></Link>
-  <Link to="/about">Yeah</Link>
+  {/* <Link to="/about">Yeah</Link> */}
       {/* SPACE */}<div style={{marginRight: "2%", display: "inline", float: "right", color: "black"}}> - </div>
 
       {/* MAIL */}
@@ -63,20 +60,21 @@ function Header(){
 }
 
 function Home() {
-
 return <div>
 {Header()}
 
 {/* CONTAINER */}
-<div>
-  <div className="CenterBody">
-    <img  src={template} className="CenterBodyImage" alt="temp"/>
-    <img  src={template} className="CenterBodyImage" alt="temp"/>
-    <img  src={template} className="CenterBodyImage" alt="temp"/>
+  <div className="CenterBodyOuter">
+      <center>
+    <div className="CenterBody">
+        <img className="CenterBodyImage" src={template}  alt="temp"/>
+        <img className="CenterBodyImage" src={template}  alt="temp"/>
+        <img className="CenterBodyImage" src={template}  alt="temp"/>
+    </div>
+      </center>
   </div>
-</div>
+  
 {/* CONTAINER END*/}
-
 </div>;};
 
 
@@ -86,11 +84,6 @@ function About() {
 <h1>Voila it works</h1>
 </div>;
 }
-
-function Users() {
-  return <h2>Users</h2>;
-}
-
 
 
 
