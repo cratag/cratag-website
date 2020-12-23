@@ -48,15 +48,14 @@ return (
 
 // HEADER
 function Header(){
+
   return <div className="Header">
 {/* HEADER */}
-  <div style={{padding: "0.5%"}}>
+  <div>
   <Link to="/" style={{ color: '#FFF', textDecoration: "none" }}><p className="HeaderTitle">crat<p style={{display: 'inline', fontFamily: 'Calibri'}}>λ</p>g</p></Link>
-{/* SPACE */}<div style={{marginRight: "2%", display: "inline", float: "right", color: "black"}}> - </div>
-
       {/* MAIL */}
       <a href="mailto:devcratag@gmail.com"><img 
-      className="HeaderButton" src={mail} 
+      className="HeaderButton" style={{marginRight: "1%"}}src={mail} 
       alt="Mail"/></a>
 
       {/* FB */}
@@ -64,8 +63,8 @@ function Header(){
       className="HeaderButton" src={fb} 
       alt="Fb" /></a>
 
-      {/* ig */}
-      <a href="https://www.facebook.com/Cratag-dev-100739675279023"><img 
+      {/* IG */}
+      <a href="https://www.instagram.com/devcratag/"><img 
       className="HeaderButton" src={ig} 
       alt="Instagram" /></a>
 
@@ -73,8 +72,7 @@ function Header(){
     <a href="https://www.github.com/cratag"><img 
       className="HeaderButton" src={git} 
       alt="Git"/></a>
-
-  </div> 
+  </div>
 {/* HEADER END */}
 </div>
 }

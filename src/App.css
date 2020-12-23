@@ -1,3 +1,4 @@
+
 .Test{
     margin-top: 5%;
     background-color: yellow;
@@ -88,16 +89,17 @@ button {
 
 .Header{
     position: fixed;
-    background-color: black;
+    background-color: rgba(0,0,0,0.90);
     color: white;
     width: 100%;
     top: 0;
+    padding: 0.5%
     }
     
 .HeaderButton{
     display: inline;
     float: right;
-    margin-right: 0.5%;
+    margin-right: 0.7%;
     margin-top: 0.7%;
     padding: 3px;
     height: 35px;
@@ -106,7 +108,7 @@ button {
 .HeaderButton:hover{
     display: inline;
     float: right;
-    margin-right: 0.5%;
+    margin-right: 0.7%;
     margin-top: 0.7%;
     padding: 3px;
     height: 37px;
@@ -118,6 +120,6 @@ button {
     text-shadow: 0px 1px #ea9b51;
     font-weight: 600;
     display: inline;
-    margin: 1%;
+    margin-left: 1%;
 }
 
