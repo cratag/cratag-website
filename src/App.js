@@ -6,7 +6,8 @@ import useWindowDimensions from "./dimensions"
 import './App.css';
 import mail from "./assets/mail.png"
 import git from "./assets/git.png"
-// import fb from "./assets/fb.png"
+import fb from "./assets/fb.png"
+import ig from "./assets/ig.png"
 
 import contact from "./assets/contact.png"
 import projects from "./assets/projects.png"
@@ -47,39 +48,31 @@ return (
 
 // HEADER
 function Header(){
-  const [gitGlow, setGitGlow] = useState(false);
-  const [mailGlow, setMailGlow] = useState(false);
-  // const [fbGlow, setFbGlow] = useState(false);
   return <div className="Header">
 {/* HEADER */}
   <div style={{padding: "0.5%"}}>
   <Link to="/" style={{ color: '#FFF', textDecoration: "none" }}><p className="HeaderTitle">crat<p style={{display: 'inline', fontFamily: 'Calibri'}}>λ</p>g</p></Link>
-  {/* <Link to="/about">Yeah</Link> */}
-      {/* SPACE */}<div style={{marginRight: "2%", display: "inline", float: "right", color: "black"}}> - </div>
-
-      {/* FB */}
-      {/* <a href="https://www.facebook.com/Cratag-dev-100739675279023"><img 
-      className="HeaderButton" src={fb} 
-      alt="Fb" style={{height: fbGlow ? "30px" : "25px"}} 
-      onMouseEnter={() => setFbGlow(true)} 
-      onMouseLeave={() => setFbGlow(false)} />
-      </a> */}
+{/* SPACE */}<div style={{marginRight: "2%", display: "inline", float: "right", color: "black"}}> - </div>
 
       {/* MAIL */}
-    <a href="mailto:devcratag@gmail.com"><img 
+      <a href="mailto:devcratag@gmail.com"><img 
       className="HeaderButton" src={mail} 
-      alt="Mail" style={{height: mailGlow ? "30px" : "25px"}} 
-      onMouseEnter={() => setMailGlow(true)} 
-      onMouseLeave={() => setMailGlow(false)} />
-    </a>
-    
+      alt="Mail"/></a>
+
+      {/* FB */}
+      <a href="https://www.facebook.com/Cratag-dev-100739675279023"><img 
+      className="HeaderButton" src={fb} 
+      alt="Fb" /></a>
+
+      {/* ig */}
+      <a href="https://www.facebook.com/Cratag-dev-100739675279023"><img 
+      className="HeaderButton" src={ig} 
+      alt="Instagram" /></a>
+
       {/* GIT */}
     <a href="https://www.github.com/cratag"><img 
       className="HeaderButton" src={git} 
-      alt="Git" style={{height: gitGlow ? "30px" : "25px"}} 
-      onMouseEnter={() => setGitGlow(true)} 
-      onMouseLeave={() => setGitGlow(false)} />
-    </a>
+      alt="Git"/></a>
 
   </div> 
 {/* HEADER END */}
