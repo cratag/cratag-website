@@ -35,20 +35,13 @@ text-align: center;
     background-color: rgba(0,0,0,0.2);
     border-radius: 10px;
 }
-
-
-button {
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 4px 0;
-}
-
 .CenterBody{
     background-color:  rgba(0,0,0,0.4);
     margin: auto;
     border-radius: 10px;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-bottom: 0;
     }
 
 .CenterBodyImage{
@@ -123,3 +116,10 @@ button {
     margin-left: 1%;
 }
 
+.Quote {
+    font-family: 'Louis George Cafe';
+    text-align: center;
+    font-size: 120%;
+    font-style: italic;
+    color: white;
+}
