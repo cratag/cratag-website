@@ -6,6 +6,7 @@ import mail from "../assets/mail.png"
 import git from "../assets/git.png"
 import fb from "../assets/fb.png"
 import ig from "../assets/ig.png"
+import logo from "../assets/1.png"
 
 // HEADER
 export default function Header(){
@@ -15,7 +16,6 @@ export default function Header(){
         <Route path="/">
         <Home />
         </Route>
-
     </Switch>
     </div>
 </Router>
@@ -23,10 +23,11 @@ export default function Header(){
 return <div className="Header">
 {/* HEADER */}
 <div>
-<Link to="/" style={{ color: '#FFF', textDecoration: "none" }}><p className="HeaderTitle">crat<p style={{display: 'inline', fontFamily: 'Calibri'}}>λ</p>g</p></Link>
+{/* <Link to="/" style={{ color: '#FFF', textDecoration: "none" }}><p className="HeaderTitle">crat<p style={{display: 'inline', fontFamily: 'Calibri'}}>λ</p>g</p></Link> */}
+<Link to="/"><img style={{ marginTop: 10, height: 50}} src={logo} alt="Logo"></img></Link>
     {/* MAIL */}
     <a href="mailto:devcratag@gmail.com"><img 
-    className="HeaderButton" style={{marginRight: "1%"}}src={mail} 
+    className="HeaderButton" style={{marginRight: "2%"}}src={mail} 
     alt="Mail"/></a>
 
     {/* FB */}

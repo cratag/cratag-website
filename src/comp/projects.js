@@ -25,10 +25,8 @@ let widthSize = width / 1.65
 </div>; }
 
 function FlipCarousel() {
-const {width } = useWindowDimensions();
-let widthSize = width / 1.77777777
   return(
-    <Carousel itemWidth={widthSize} arrows>
+    <Carousel arrows>
     <img src={flip1}  alt="Flip a coin carousel"/>
     <img src={flip2}  alt="Flip a coin carousel"/>
     <img src={flip3}  alt="Flip a coin carousel" />

@@ -53,7 +53,7 @@ function Home() {
   const { width, height } = useWindowDimensions();
   let imageWidth = width * 0.15
   let heightAsMargin = height * 0.13
-  let heightAsMarginBottom = height * 0.05
+  let heightAsMarginBottom = height * 0.02
 return <div>
 {Header()}
 {/* CONTAINER */}
