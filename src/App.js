@@ -1,14 +1,14 @@
 
 import './App.css';
-
 import React from 'react';
-import {BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
-
 import useWindowDimensions from "./dimensions"
-
-import About from "./comp/about"
 import Header from "./comp/header.js"
 import Footer from "./comp/footer.js"
+
+import {BrowserRouter as Router,Switch,Route, Link} from "react-router-dom";
+
+import Projects from "./comp/projects"
+import About from "./comp/about"
 import quoteOfTheDay from "./comp/quote.js"
 
 import contact from "./assets/contact.png"
@@ -87,11 +87,6 @@ function Work() {
 {Footer()}
 </div>;}
 
-function Projects() {
-  return <div>
-{Header()}
-{Footer()}
-</div>; }
 
 
 function Contact() {
