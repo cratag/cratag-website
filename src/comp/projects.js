@@ -7,23 +7,31 @@ import useWindowDimensions from "../dimensions"
 import Carousel from '@brainhubeu/react-carousel';
 import './style.css';
 
-import brbad from "../assets/brbad.png"
+import flip1 from "../assets/flipacoin/1.png"
+import flip2 from "../assets/flipacoin/2.png"
+import flip3 from "../assets/flipacoin/3.png"
+import flip4 from "../assets/flipacoin/4.png"
 
 export default function Projects() {
-const { height } = useWindowDimensions();
+const { height, width } = useWindowDimensions();
 let heightAsMargin = height * 0.13
+let widthSize = width / 1.65
   return <div>
 {Header()}
-<div style={{marginTop: heightAsMargin}}>
-{flipCarousel()}
-</div>
+<center style={{marginTop: heightAsMargin}}>
+  <div style={{width: widthSize}}>{FlipCarousel()}</div>
+</center>
 {Footer()}
 </div>; }
 
-const flipCarousel = () => (
-  <Carousel arrows>
-    <img src={brbad} alt="alt"/>
-    <img src={brbad} alt="alt"/>
-    <img src={brbad} alt="alt" />
+function FlipCarousel() {
+const {width } = useWindowDimensions();
+let widthSize = width / 1.77777777
+  return(
+    <Carousel itemWidth={widthSize} arrows>
+    <img src={flip1}  alt="Flip a coin carousel"/>
+    <img src={flip2}  alt="Flip a coin carousel"/>
+    <img src={flip3}  alt="Flip a coin carousel" />
+    <img src={flip4}  alt="Flip a coin carousel" />
   </Carousel>
-);
+  )};
