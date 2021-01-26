@@ -5,6 +5,7 @@ import Header from "../comp/header.js"
 import Footer from "../comp/footer.js"
 import useWindowDimensions from "../dimensions"
 
+import mailendg from "../assets/mailendg.png"
 export default function About() {
 function age() {
     var ageDifMs = Date.now() - (new Date("1996-02-17").getTime());
@@ -49,6 +50,8 @@ className="AboutBodyOff">
             <div style={{float: 'right'}}><br/><br/>- cratag</div>
 </div>
 </center>
+<center><div className="AboutBody"><a style={{ color: '#FFF', textDecoration: "none", display: 'inline-block'}} href="https://www.instagram.com/mailendg/">Special thanks to my Graphic Designer and my special one, <div style={{fontWeight: "bold", display: 'inline-block'}}>mailendg</div> <img src={mailendg}  style={{display: 'inline-block'}}alt="IG mailendg"/></a></div></center>
+<div style={{marginBottom: "1%"}}/>
 </div>
 {Footer()}
 </div>;}

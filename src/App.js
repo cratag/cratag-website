@@ -52,24 +52,45 @@ return (
 function Home() {
   const { width, height } = useWindowDimensions();
   let imageWidth = width * 0.15
+  let imageWidthMobile = width * 0.50
   let heightAsMargin = height * 0.13
+  let heightAsMarginMobile = height * 0.10
   let heightAsMarginBottom = height * 0.02
+  let mobile = false
+  if(width < 770){ mobile = false} else {mobile = true}
 return <div>
 {Header()}
 {/* CONTAINER */}
-<center>
+{mobile ? (
+  //////////////////////////////////////////////PC ↓
+<p><center>
   <div style={{marginTop: heightAsMargin, marginBottom: heightAsMarginBottom}} className="CenterBodyOuter">
       <center>
-    <div className="CenterBody">
-        <Link to="/work"><img className="CenterBodyImage" style={{width: imageWidth}} src={contact}  alt="Contact"/></Link>
-        <Link to="/work"><img className="CenterBodyImage" style={{width: imageWidth}} src={projects}  alt="Projects"/></Link>
-        <Link to="/about"><img className="CenterBodyImage" style={{width: imageWidth}} src={aboutme}  alt="About Me"/></Link>
-    </div>
+          <div className="CenterBody">
+            <Link to="/work"><img className="CenterBodyImage" style={{width: imageWidth}} src={contact}  alt="Contact"/></Link>
+            <Link to="/projects"><img className="CenterBodyImage" style={{width: imageWidth}} src={projects}  alt="Projects"/></Link>
+            <Link to="/about"><img className="CenterBodyImage" style={{width: imageWidth}} src={aboutme}  alt="About Me"/></Link>
+          </div>
       </center>
   </div>
-</center>
+</center></p>
+)
+: //////////////////////////////////////////////////Mobile ↓ 
+(<p><center>
+  <div style={{marginTop: heightAsMarginMobile, marginBottom: heightAsMarginBottom}} className="CenterBodyOuter">
+      <center>
+          <div className="CenterBody">
+            <Link to="/work"><img src={contact}  style={{marginBottom: "2%", marginTop: "1%", width: imageWidthMobile}}alt="Contact"/></Link>
+            <Link to="/projects"><img src={projects}  style={{marginBottom: "2%", marginTop: "1%", width: imageWidthMobile}}alt="Projects"/></Link>
+            <Link to="/about"><img src={aboutme}  style={{marginBottom: "2%", marginTop: "1%", width: imageWidthMobile}}alt="About Me"/></Link>
+          </div>
+      </center>
+  </div>
+</center></p>)}
 {/* CONTAINER END*/}
-{quoteOfTheDay()}
+{mobile ? (quoteOfTheDay()) : (<div style={{marginBottom: "10%"}}>{quoteOfTheDay()}</div>)}
+
+
 {Footer()}
 </div>;};
 

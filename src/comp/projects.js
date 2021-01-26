@@ -4,32 +4,34 @@ import Header from "../comp/header.js"
 import Footer from "../comp/footer.js"
 import useWindowDimensions from "../dimensions"
 
-import Carousel from '@brainhubeu/react-carousel';
+import styled, { keyframes } from 'styled-components';
+import { shake } from 'react-animations';
+import swipe from '../assets/swipe.png'
+
 import './style.css';
 
-import flip1 from "../assets/flipacoin/1.png"
-import flip2 from "../assets/flipacoin/2.png"
-import flip3 from "../assets/flipacoin/3.png"
-import flip4 from "../assets/flipacoin/4.png"
+import FlipCarousel from "./carousels/flipCarousel"
+import MultiCarousel from "./carousels/multiCarousel"
+
+ 
+
 
 export default function Projects() {
 const { height, width } = useWindowDimensions();
 let heightAsMargin = height * 0.13
-let widthSize = width / 1.65
-  return <div>
+let mobile = false
+if(width < 770){ mobile = false} else {mobile = true}
+// Is the screen big?
+// if (width > 1200) {bigScreen = true} else {bigScreen = false}
+const Bounce = styled.div`animation: 5s ${keyframes`${shake}`} infinite`;
+return <div>
 {Header()}
 <center style={{marginTop: heightAsMargin}}>
-  <div style={{width: widthSize}}>{FlipCarousel()}</div>
+  {/* <p style={{color: "white", fontSize: 50}}>Width: {width}</p> */}
+ <div className="Carousel">{MultiCarousel()}</div>
+ {mobile ? ("") : (<Bounce><img src={swipe} alt="Swipe"/></Bounce>)}
+ <div className="Carousel">{FlipCarousel()}</div>
 </center>
 {Footer()}
 </div>; }
 
-function FlipCarousel() {
-  return(
-    <Carousel arrows>
-    <img src={flip1}  alt="Flip a coin carousel"/>
-    <img src={flip2}  alt="Flip a coin carousel"/>
-    <img src={flip3}  alt="Flip a coin carousel" />
-    <img src={flip4}  alt="Flip a coin carousel" />
-  </Carousel>
-  )};
