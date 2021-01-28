@@ -12,6 +12,7 @@ import './style.css';
 
 import FlipCarousel from "./carousels/flipCarousel"
 import MultiCarousel from "./carousels/multiCarousel"
+import GeneradorCarousel from './carousels/generadorCarousel';
 
  
 
@@ -31,6 +32,8 @@ return <div>
  <div className="Carousel">{MultiCarousel()}</div>
  {mobile ? ("") : (<Bounce><img src={swipe} alt="Swipe"/></Bounce>)}
  <div className="Carousel">{FlipCarousel()}</div>
+ {mobile ? ("") : (<Bounce><img src={swipe} alt="Swipe"/></Bounce>)}
+ <div className="Carousel">{GeneradorCarousel()}</div>
 </center>
 {Footer()}
 </div>; }

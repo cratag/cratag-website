@@ -10,7 +10,18 @@ background-color:  rgba(0,0,0,0.4);
 margin: 2%;
 border-radius: 10px;
 color: white;
-font-size: 21px;
+font-size: 18px;
+padding: 1%;
+display:inline-block;
+overflow-wrap: break-word;
+text-align: center; 
+}
+.AboutBodyMobile{
+background-color:  rgba(0,0,0,0.4);
+margin: 2%;
+border-radius: 10px;
+color: white;
+font-size: 16px;
 padding: 1%;
 display:inline-block;
 overflow-wrap: break-word;
@@ -21,9 +32,19 @@ text-align: center;
 background-color:  rgba(0,0,0,0.2);
 border-radius: 10px;
 color: white;
-font-size: 20px;
+font-size: 16px;
 padding: 1%;
 display:inline-block;
+overflow-wrap: break-word;
+text-align: center; 
+}
+
+.AboutBodyOffMobile{
+background-color:  rgba(0,0,0,0.2);
+border-radius: 18px;
+color: white;
+font-size: 14px;
+padding: 1%;
 overflow-wrap: break-word;
 text-align: center; 
 }
