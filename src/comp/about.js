@@ -84,8 +84,8 @@ return <div style={{flexDirection: 'row'}} >
     <center>
         {mobile ? 
         (
-            <div className="AboutBody" style={{margin: 0}}>
-                <a style={{ color: '#FFF', textDecoration: "none", display: 'inline-block'}} 
+            <div className="AboutBody" style={{marginBottom: "5%"}}>
+                <a style={{ color: '#FFF', textDecoration: "none", display: 'inline-block', }} 
                 href="https://www.instagram.com/mailendg/">Special thanks to my Graphic Designer and my special one, <div style={{fontWeight: "bold", display: 'inline-block', }}>mailendg</div>
                 <img src={mailendg}  style={{display: 'inline-block'}}alt="IG mailendg"/>
                 </a>

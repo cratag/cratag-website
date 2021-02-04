@@ -55,7 +55,8 @@ function Home() {
   let imageWidthMobile = width * 0.50
   let heightAsMargin = height * 0.13
   let heightAsMarginMobile = height * 0.10
-  let heightAsMarginBottom = height * 0.02
+
+
   let mobile = false
   if(width < 770){ mobile = false} else {mobile = true}
 return <div>
@@ -64,7 +65,7 @@ return <div>
 {mobile ? (
   //////////////////////////////////////////////PC ↓
 <p><center>
-  <div style={{marginTop: heightAsMargin, marginBottom: heightAsMarginBottom}} className="CenterBodyOuter">
+  <div style={{marginTop: heightAsMargin, marginBottom: "0"}} className="CenterBodyOuter">
       <center>
           <div className="CenterBody">
             <Link to="/work"><img className="CenterBodyImage" style={{width: imageWidth}} src={contact}  alt="Contact"/></Link>
@@ -77,7 +78,7 @@ return <div>
 )
 : //////////////////////////////////////////////////Mobile ↓ 
 (<p><center>
-  <div style={{marginTop: heightAsMarginMobile, marginBottom: heightAsMarginBottom}} className="CenterBodyOuter">
+  <div style={{marginTop: heightAsMarginMobile, marginBottom: "0"}} className="CenterBodyOuter">
       <center>
           <div className="CenterBody">
             <Link to="/work"><img src={contact}  style={{marginBottom: "2%", marginTop: "1%", width: imageWidthMobile}}alt="Contact"/></Link>
